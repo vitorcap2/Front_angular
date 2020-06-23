@@ -9,7 +9,7 @@ import { map, catchError } from "rxjs/operators";
   providedIn: "root",
 })
 export class DespesaService {
-  baseUrl = "http://localhost:3001/despesas";
+  baseUrl = "https://dry-beyond-40903.herokuapp.com/";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
