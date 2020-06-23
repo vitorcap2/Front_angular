@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Nova Despesa</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Setor"
+                [(ngModel)]="despesa.setor" name="setor">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)"
+                [(ngModel)]="despesa.price" name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createDespesa()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+
